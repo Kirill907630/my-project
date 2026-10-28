@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.repetich.Tabltovar">
+    <children>
+        <Button fx:id="dob_button" layoutX="14.0" layoutY="342.0" mnemonicParsing="false" onAction="#dob_tovar" prefHeight="41.0" prefWidth="91.0" style="-fx-background-radius: 50; -fx-background-color: #a0ff80;" text="Добавить">
+            <font><Font name="System Bold" size="12.0" /></font>
+        </Button>
+        <Button fx:id="izm_button" layoutX="124.0" layoutY="342.0" mnemonicParsing="false" onAction="#izm_tovar" prefHeight="41.0" prefWidth="91.0" style="-fx-background-radius: 50; -fx-background-color: #a0ff80;" text="Изменить">
+            <font><Font name="System Bold Italic" size="12.0" /></font>
+        </Button>
+        <Button fx:id="udal_button" layoutX="235.0" layoutY="342.0" mnemonicParsing="false" onAction="#udal_tovar" prefHeight="41.0" prefWidth="91.0" style="-fx-background-radius: 50; -fx-background-color: #a0ff80;" text="Удалить">
+            <font><Font name="System Bold Italic" size="12.0" /></font>
+        </Button>
+        <Button fx:id="menu" layoutX="343.0" layoutY="342.0" mnemonicParsing="false" onAction="#menu" prefHeight="41.0" prefWidth="91.0" style="-fx-background-radius: 50; -fx-background-color: #fc5bff;" text="Меню">
+            <font><Font name="System Bold Italic" size="12.0" /></font>
+        </Button>
+        <Button fx:id="vixod" layoutX="450.0" layoutY="342.0" mnemonicParsing="false" onAction="#vixod" prefHeight="41.0" prefWidth="91.0" style="-fx-background-radius: 50; -fx-background-color: #ff0000;" text="Выход">
+            <font><Font name="System Bold Italic" size="12.0" /></font>
+        </Button>
+        <TextField fx:id="id_tovar" layoutX="12.0" layoutY="303.0" promptText="Введите id товара">
+            <font><Font name="System Bold Italic" size="14.0" /></font>
+        </TextField>
+        <TextField fx:id="naz_tovar" layoutX="204.0" layoutY="303.0" prefHeight="29.0" prefWidth="203.0" promptText="Введите название товара">
+            <font><Font name="System Bold Italic" size="14.0" /></font>
+        </TextField>
+        <TextField fx:id="chen_tovar" layoutX="417.0" layoutY="303.0" prefHeight="29.0" prefWidth="203.0" promptText="Введите цену товара">
+            <font><Font name="System Bold Italic" size="14.0" /></font>
+        </TextField>
+        <TextField fx:id="poisk_text" layoutX="233.0" layoutY="14.0" onAction="#Poisk" promptText="Поиск" style="-fx-background-color: #a0ff80;">
+            <font><Font name="System Bold Italic" size="14.0" /></font>
+        </TextField>
+        <TableView fx:id="tabl_tovar" layoutX="192.0" layoutY="76.0" prefHeight="200.0" prefWidth="228.0" style="-fx-background-color: #3626ae;">
+            <columns>
+                <TableColumn fx:id="ID_TABL_TOVAR" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="NAZ_TABL_TOVAR" prefWidth="75.0" text="Название" />
+                <TableColumn fx:id="CHEN_TABL_TOVAR" prefWidth="75.0" text="Цена" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

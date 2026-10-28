@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0077ff;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.repetich.Menu">
+   <children>
+      <Label layoutX="239.0" layoutY="24.0" text="Меню">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Button layoutX="497.0" layoutY="341.0" mnemonicParsing="false" onAction="#vixod_button" style="-fx-background-color: #ff0000; -fx-background-radius: 50;" text="Выход">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="nzd" layoutX="24.0" layoutY="341.0" mnemonicParsing="false" onAction="#nzd_button" style="-fx-background-color: #acff6d; -fx-background-radius: 50;" text="Назад">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="tov" layoutX="202.0" layoutY="120.0" mnemonicParsing="false" onAction="#tov_button" style="-fx-background-color: #acff6d; -fx-background-radius: 50;" text="Таблица товары">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="pol" layoutX="170.0" layoutY="178.0" mnemonicParsing="false" onAction="#pol_button" style="-fx-background-color: #acff6d; -fx-background-radius: 50;" text="Таблица пользователи">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
